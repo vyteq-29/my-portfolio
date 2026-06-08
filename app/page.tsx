@@ -344,13 +344,9 @@ export default function App() {
     };
 
     try {
-      // Formspree direct routing endpoint configured to vivek@vyteq.in
-      const response = await fetch("https://formspree.io/f/xvgodepk", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
@@ -360,12 +356,12 @@ export default function App() {
         triggerToast("Enquiry securely dispatched!");
       } else {
         const errorBody = await response.json().catch(() => ({}));
-        console.error("Formspree error", response.status, errorBody);
+        console.error("Contact API error", response.status, errorBody);
         setFormStatus("error");
         triggerToast("Routing mismatch. Please contact us via vivek@vyteq.in");
       }
     } catch (err) {
-      console.error("Formspree network error", err);
+      console.error("Contact API network error", err);
       setFormStatus("error");
       triggerToast("Transmission offline. Please mail vivek@vyteq.in");
     }
@@ -1414,28 +1410,6 @@ export default function App() {
                     Your specifications have been sent to{" "}
                     <strong className="text-blue-950">vivek@vyteq.in</strong>.
                   </p>
-
-                  <div className="text-xs text-slate-600 mt-6 bg-amber-50 border border-amber-200 p-5 rounded-xl text-left max-w-md mx-auto space-y-2">
-                    <p className="font-bold text-amber-800 flex items-center gap-1.5">
-                      <Terminal className="h-4 w-4" /> First-Time Form Setup
-                      Notice:
-                    </p>
-                    <p>
-                      Because this is a secure routing dispatch to your custom
-                      domain,{" "}
-                      <strong>
-                        Formspree will send a brief confirmation email to
-                        vivek@vyteq.in
-                      </strong>
-                      .
-                    </p>
-                    <p className="font-medium text-slate-700">
-                      Kindly check your email inbox (and Spam folders), locate
-                      the verification request from Formspree, and click{" "}
-                      <strong>&quot;Verify Email&quot;</strong>. Once activated,
-                      all submissions route straight to your inbox instantly.
-                    </p>
-                  </div>
 
                   <button
                     onClick={resetEnquiryForm}
