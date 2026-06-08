@@ -527,11 +527,11 @@ export default function App() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-none text-slate-900">
-                Next-Gen Web, Software &amp;{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-950 to-teal-500">
-                  AI Agents
-                </span>
-              </h1>
+  AI Agents, Web Development & Software Solutions by
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-950 to-teal-500">
+    {" "}Vyteq
+  </span>
+</h1>
 
               <p className="text-base sm:text-lg text-slate-500 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-sans">
                 At <span className="font-bold text-blue-950">Vyteq</span>, we
