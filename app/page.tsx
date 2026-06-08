@@ -389,9 +389,9 @@ export default function App() {
             {/* Embedded corporate identity logo */}
             <a href="#hero" className="flex items-center space-x-3 group">
               <img
-                src="./logo.png"
+                src="./mainlogo.png"
                 alt="Vyteq Technology Solutions Logo"
-                className="h-10 sm:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-[1.01]"
+                className="h-15 sm:h-12 w-40 sm:w-48 object-contain transition-transform duration-500 group-hover:scale-[1.01]"
               />
             </a>
 
@@ -1610,7 +1610,7 @@ export default function App() {
             {/* Logo details column */}
             <div className="md:col-span-4 space-y-4">
               <img
-                src="./logo.png"
+                src="./mainlogo.png"
                 alt="Vyteq Technology Solutions"
                 className="h-10 w-auto object-contain mb-3 bg-white p-2 rounded-lg"
               />
