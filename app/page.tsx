@@ -382,7 +382,7 @@ export default function App() {
 
   return (
     <div className="bg-slate-50 text-slate-900 font-sans min-h-screen overflow-x-hidden antialiased">
-      {}
+      { }
       <nav className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
@@ -501,7 +501,7 @@ export default function App() {
         )}
       </nav>
 
-      {}
+      { }
       <section
         id="hero"
         className="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-slate-100"
@@ -527,11 +527,11 @@ export default function App() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-none text-slate-900">
-  AI Agents, Web Development & Software Solutions by
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-950 to-teal-500">
-    {" "}Vyteq
-  </span>
-</h1>
+                AI Agents, Web Development & Software Solutions by
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-950 to-teal-500">
+                  {" "}Vyteq
+                </span>
+              </h1>
 
               <p className="text-base sm:text-lg text-slate-500 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-sans">
                 At <span className="font-bold text-blue-950">Vyteq</span>, we
@@ -624,7 +624,7 @@ export default function App() {
         </div>
       </section>
 
-      {}
+      { }
       <section id="about" className="py-24 bg-white border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -699,7 +699,7 @@ export default function App() {
         </div>
       </section>
 
-      {}
+      { }
       <section id="services" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
@@ -814,7 +814,7 @@ export default function App() {
         </div>
       </section>
 
-      {}
+      { }
       <section id="live-projects" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -944,7 +944,7 @@ export default function App() {
         </div>
       </section>
 
-      {}
+      { }
       <section
         id="interactive-agent"
         className="py-24 bg-slate-50 border-y border-slate-100 relative"
@@ -1002,11 +1002,10 @@ export default function App() {
                       </div>
                     )}
                     <div
-                      className={`p-4 rounded-2xl max-w-[85%] shadow-sm ${
-                        msg.sender === "user"
-                          ? "bg-blue-950 text-white rounded-tr-none text-right"
-                          : "bg-slate-100 border border-slate-200/60 rounded-tl-none text-left"
-                      }`}
+                      className={`p-4 rounded-2xl max-w-[85%] shadow-sm ${msg.sender === "user"
+                        ? "bg-blue-950 text-white rounded-tr-none text-right"
+                        : "bg-slate-100 border border-slate-200/60 rounded-tl-none text-left"
+                        }`}
                     >
                       <p className="text-sm leading-relaxed whitespace-pre-wrap">
                         {msg.text}
@@ -1177,7 +1176,7 @@ export default function App() {
         </div>
       </section>
 
-      {}
+      { }
       <section id="cost-estimator" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="p-8 sm:p-12 rounded-3xl bg-slate-50 border border-slate-200 shadow-xl">
@@ -1313,7 +1312,7 @@ export default function App() {
         </div>
       </section>
 
-      {}
+      { }
       <section
         id="enquiry"
         className="py-24 bg-slate-50 relative border-t border-slate-200"
@@ -1603,7 +1602,7 @@ export default function App() {
         </div>
       </section>
 
-      {}
+      { }
       <footer className="bg-slate-900 text-slate-400 py-16 relative z-10 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start mb-12">
@@ -1709,11 +1708,10 @@ export default function App() {
 
           {/* Toast Notification Container */}
           <div
-            className={`fixed bottom-6 right-6 z-50 transform transition-all duration-300 pointer-events-none bg-slate-900 border border-teal-500/40 px-6 py-4 rounded-xl shadow-xl flex items-center space-x-3 text-xs text-white max-w-sm ${
-              isToastVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-20 opacity-0"
-            }`}
+            className={`fixed bottom-6 right-6 z-50 transform transition-all duration-300 pointer-events-none bg-slate-900 border border-teal-500/40 px-6 py-4 rounded-xl shadow-xl flex items-center space-x-3 text-xs text-white max-w-sm ${isToastVisible
+              ? "translate-y-0 opacity-100"
+              : "translate-y-20 opacity-0"
+              }`}
           >
             <Info className="h-5 w-5 text-teal-400 shrink-0" />
             <span>{toastText}</span>
@@ -1722,13 +1720,35 @@ export default function App() {
           {/* Copyright row */}
           <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
             <p>&copy; 2026 Vyteq Technology Solutions. All rights reserved.</p>
-            <div className="flex space-x-6 mt-4 sm:mt-0">
-              <a href="#about" className="hover:text-teal-400">
-                Code Standards
-              </a>
-              <a href="#services" className="hover:text-teal-400">
-                Privacy &amp; NDAs
-              </a>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 mt-4 sm:mt-0">
+              <div className="flex items-center space-x-4">
+                <a
+                  href="https://www.linkedin.com/company/vyteq-technology-solutions/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-teal-400 transition-colors flex items-center gap-2"
+                >
+                  <span className="sr-only">Vyteq LinkedIn</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    className="h-5 w-5"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.18 0 52.52 0 23.52 24.95 0 55.74 0A55.92 55.92 0 01111.7 52.65c0 30.58-24.95 53.65-57.86 54.7zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.2-79.2-48.2 0-55.6 37.7-55.6 76.7V448h-92.7V148.9h89V196h1.3c12.4-23.5 42.6-48.2 87.8-48.2 94 0 111.3 61.9 111.3 142.3V448z" />
+                  </svg>
+                  LinkedIn
+                </a>
+              </div>
+              <div className="flex space-x-6 mt-4 sm:mt-0">
+                <a href="#about" className="hover:text-teal-400">
+                  Code Standards
+                </a>
+                <a href="#services" className="hover:text-teal-400">
+                  Privacy &amp; NDAs
+                </a>
+              </div>
             </div>
           </div>
         </div>
